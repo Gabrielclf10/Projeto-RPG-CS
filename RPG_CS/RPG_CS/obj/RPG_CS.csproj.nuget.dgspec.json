@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj": {}
+    "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj": {
+    "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
+        "projectUniqueName": "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
         "projectName": "RPG_CS",
-        "projectPath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
+        "projectPath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
         "packagesPath": "C:\\Users\\DF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\obj\\",
+        "outputPath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DF\\AppData\\Roaming\\NuGet\\NuGet.Config",

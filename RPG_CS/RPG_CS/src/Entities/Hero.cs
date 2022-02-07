@@ -6,11 +6,11 @@ namespace RPG_CS.src.Entities
 {
     public abstract class Hero
     {
-        public Hero(int id,string name, int level,string heroType, int hp, int mana)
+        public Hero(int id,string name,string heroType)
         {
             this.id = id;
             this.name = name;
-            this.level = level;
+            this.level = 1;
             this.heroType = heroType;
             this.hp = hp;
             this.mana = mana;
@@ -31,12 +31,12 @@ namespace RPG_CS.src.Entities
         {
             string returner = "";
             returner += "ID: " + this.id + Environment.NewLine;
-            returner += "Nome: " + this.name + Environment.NewLine;
-            returner += "Nível: " + this.level + Environment.NewLine;
-            returner += "Classe: " + this.heroType + Environment.NewLine;
-            returner += "HP: " + this.hp + Environment.NewLine;
-            returner += "Mana: " + this.mana + Environment.NewLine;
-            returner += "Excluido: " + this.deleted + Environment.NewLine;
+            returner += "   Nome: " + this.name + Environment.NewLine;
+            returner += "   Nível: " + this.level + Environment.NewLine;
+            returner += "   Classe: " + this.heroType + Environment.NewLine;
+            returner += "   HP: " + this.hp + Environment.NewLine;
+            returner += "   Mana: " + this.mana + Environment.NewLine;
+            returner += "   Excluido: " + this.deleted + Environment.NewLine;
             return returner;
         }
 

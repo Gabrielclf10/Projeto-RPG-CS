@@ -11,3 +11,16 @@ C:\Users\DF\Desktop\Programação - Lições\RPG_CS\RPG_CS\RPG_CS\obj\Debug\netc
 C:\Users\DF\Desktop\Programação - Lições\RPG_CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.dll
 C:\Users\DF\Desktop\Programação - Lições\RPG_CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.pdb
 C:\Users\DF\Desktop\Programação - Lições\RPG_CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.genruntimeconfig.cache
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.exe
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.deps.json
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.runtimeconfig.json
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.runtimeconfig.dev.json
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.dll
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\bin\Debug\netcoreapp3.1\RPG_CS.pdb
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.csprojAssemblyReference.cache
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.AssemblyInfoInputs.cache
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.AssemblyInfo.cs
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.csproj.CoreCompileInputs.cache
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.dll
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.pdb
+C:\Users\DF\Desktop\Programação - Lições\Projeto Jogo em CS\Projeto-RPG-CS\RPG_CS\RPG_CS\obj\Debug\netcoreapp3.1\RPG_CS.genruntimeconfig.cache

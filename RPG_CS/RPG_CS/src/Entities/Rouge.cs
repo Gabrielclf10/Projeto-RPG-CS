@@ -6,14 +6,14 @@ namespace RPG_CS.src.Entities
 {
     class Rogue : Hero
     {
-        public Rogue(int id,string name, int level, string heroType, int hp,int mana)
+        public Rogue(int id,string name, string heroType)
         {
             this.id = id;
             this.name = name;
-            this.level = level;
-            this.heroType = "Rouge";
-            this.hp = hp;
-            this.mana = mana;
+            this.level = 1;
+            this.heroType = "Ladino";
+            this.hp = 80;
+            this.mana = 50;
             this.deleted = false;
         }
         public Rogue() { }

@@ -6,14 +6,14 @@ namespace RPG_CS.src.Entities
 {
     class Wizard : Hero
     {
-        public Wizard(int id,string name, int level, string heroType, int hp, int mana)
+        public Wizard(int id,string name, string heroType)
         {
             this.id = id;
             this.name = name;
-            this.level = level;
-            this.heroType = "Wizard";
-            this.hp = hp;
-            this.mana = mana;
+            this.level = 1;
+            this.heroType = "Mago";
+            this.hp = 70;
+            this.mana = 200;
             this.deleted = false;
         }
         public Wizard() { }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sQHCNWgkfwydPblwaeLswWaL4VzWKK0fK4ie4ajuK9ES98a9nrv3KXqe71OMiFnqS8SNe5vceoQ2l1jalh0duA==",
+  "dgSpecHash": "pRne6IJd+UmYTtusNSu3ih7jphYFAhecQo8hVbHBH9emqSKLJKRPrt9BPuY91Tp8t5qerxati4TgyMATZnlZbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\RPG_CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
+  "projectFilePath": "C:\\Users\\DF\\Desktop\\Programação - Lições\\Projeto Jogo em CS\\Projeto-RPG-CS\\RPG_CS\\RPG_CS\\RPG_CS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DF\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
