@@ -14,6 +14,11 @@ namespace RPG_CS.src.Entities
             listHero[id] = entity;
         }
 
+        public void UpdateName(int id, string name)
+        {
+            listHero[id].name = name;
+        }
+
         public void Delete(int id)
         {
             listHero[id].DeleteThis();

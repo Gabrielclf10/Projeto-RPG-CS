@@ -9,9 +9,15 @@ namespace RPG_CS.src.Entities
     public class Game
     {
         static HeroRepository heroRepository = new HeroRepository();
+
         Knight myKnight = new Knight();
         Wizard myWizard = new Wizard();
         Rogue myRouge = new Rogue();
+
+        Item Sword = new Item("Espada",1,10);
+        Item Staff = new Item("Cajado", 1, 15);
+        Item Dagger = new Item("Adaga", 2, 7);
+
 
         public Game()
         {}
@@ -23,6 +29,7 @@ namespace RPG_CS.src.Entities
 
             static int RunTitleMenu(int Index)
             {
+                Console.ResetColor();
                 string title = @"                                                          
 
                                  ▄▀▀▄▀▀▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   
@@ -65,7 +72,7 @@ namespace RPG_CS.src.Entities
                 switch (selectedIndex)
                 {
                     case 0:
-                        RunNewGame();
+                        RunNewGameMenu();
                         break;
                     case 1:
                         RunMainMenu();
@@ -77,7 +84,7 @@ namespace RPG_CS.src.Entities
                 }
             }
 
-            static void RunNewGame()
+            static void RunNewGameMenu()
             {
                 string title = @"                                                          
                     Use as Setas para navegar entre as opções abaixo! ";
@@ -88,20 +95,20 @@ namespace RPG_CS.src.Entities
                 switch (selectedIndex)
                 {
                     case 0:
-                        HeroAdd(); // TODO Depois daqui, Iniciar o jogo
-                        RunNewGame();
+                        AddHero(); // TODO Depois daqui, Iniciar o jogo
+                        RunNewGameMenu();
                         break;
                     case 1:
                         UpdateHero();
-                        RunNewGame();
+                        RunNewGameMenu();
                         break;
                     case 2:
-                        HeroList();
-                        RunNewGame();
+                        ListHero();
+                        RunNewGameMenu();
                         break;
                     case 3:
                         DeleteHero();
-                        RunNewGame();
+                        RunNewGameMenu();
                         break;
                     default:
                         Console.WriteLine("Erro: Opção Inválida.");
@@ -119,7 +126,7 @@ namespace RPG_CS.src.Entities
                 WaitForKey();
             }
 
-            static void HeroList()
+            static void ListHero()
             {
                 Console.Clear();
                 Console.WriteLine(@"
@@ -129,7 +136,8 @@ namespace RPG_CS.src.Entities
 
                 if (list.Count == 0)
                 {
-                    Console.WriteLine(" Nenhum heroi cadastrado.");
+                    Console.WriteLine(@" 
+                        !!! Nenhum heroi cadastrado. !!!");
                     Console.WriteLine();
                     WaitForKey();
                     return;
@@ -139,6 +147,10 @@ namespace RPG_CS.src.Entities
                 {
 
                     var deleted = hero.returnDeleted();
+                    if(deleted == true)
+                    {
+                        continue;
+                    }
 
                     Console.WriteLine($@"
                     +
@@ -146,19 +158,19 @@ namespace RPG_CS.src.Entities
                     | Nome:   {hero.returnName()}
                     | Nível:  {hero.returnLevel()}
                     | Classe: {hero.returnHeroType()} 
-                    | Status: {(deleted ? "[Excluído]" : "Disponível")}                                                     
+                    | Status: {(deleted ? "X[Excluído]X" : "Disponível")}                                                     
                     +                                                       ");
 
                 }
                 WaitForKey();
             }
 
-            static void HeroAdd()
+            static void AddHero()
             {
                 int getClass = 0;
 
                 string title = @"                                                          
-                    Escolha a Classe do seu Herói! ";
+                    Escolha a Classe do seu Herói! - (Não é possível alterar depois)";
                 string[] options = { "Guerreiro", "Mago", "Ladino" };
                 Menu heroAddClassMenu = new Menu(title, options);
                 int selectedIndex = heroAddClassMenu.Run();
@@ -175,12 +187,12 @@ namespace RPG_CS.src.Entities
                         getClass = 3;
                         break;
                     default:
-                        Console.WriteLine("Erro: Opção Inválida.");
+                        Console.WriteLine(" - Erro: Opção Inválida.");
                         break;
                 }
 
-                Console.WriteLine();
-                Console.WriteLine(" - Digite o nome do seu Heroi: ");
+                Console.Clear();
+                Console.WriteLine(" - Digite o nome do seu Heroi - (Você pode alterar mais tarde)");
                 string getName = (Console.ReadLine());
                 Console.WriteLine();
 
@@ -222,115 +234,78 @@ namespace RPG_CS.src.Entities
             static void UpdateHero()
             {
                 int idHero = -1;
-                int getClass = 0;
+                bool validation = false;
 
                 Console.Clear();
                 Console.WriteLine(@"
-                            - Atualizando Herói -  
-                                                    ");
+                            - Atualizando Herói -   ");
 
                 var list = heroRepository.List();
 
                 if (list.Count == 0)
                 {
-                    Console.WriteLine("!!! Nenhum herói cadastrado. !!!");
+                    Console.WriteLine(@"
+                        !!! Nenhum herói cadastrado. !!!");
                     Console.WriteLine();
                     WaitForKey();
                     return;
                 }
 
-                HeroList();
+                ListHero();
                 Console.WriteLine(@"
                             - Atualizando Heroi -  ");
-                Console.WriteLine(@"
-                       Insira o ID do herói a atualizar: ");
-                idHero = int.Parse(Console.ReadLine());
 
-                Console.Clear();
-
-                string title = @"                                                          
-                    Escolha a nova Classe do seu Herói! ";
-                string[] options = { "Guerreiro", "Mago", "Ladino" };
-                Menu heroAddClassMenu = new Menu(title, options);
-                int selectedIndex = heroAddClassMenu.Run();
-
-                switch (selectedIndex)
+                do
                 {
-                    case 0:
-                        getClass = 1;
-                        break;
-                    case 1:
-                        getClass = 2;
-                        break;
-                    case 2:
-                        getClass = 3;
-                        break;
-                    default:
-                        Console.WriteLine("Erro: Opção Inválida.");
-                        break;
-                }
+                    Console.WriteLine(@"
+                        Insira o ID do herói a atualizar: ");
+
+                    if (Int32.TryParse(Console.ReadLine(), out idHero))
+                    {
+                        validation = true;
+                    }
+                } while (validation == false);
+
+                    Console.Clear();
 
                 Console.WriteLine();
-                Console.WriteLine(" Insira novo o nome do seu Heroi: ");
+                Console.WriteLine(@"
+                        Insira novo o nome do seu Heroi: ");
                 string getName = (Console.ReadLine());
 
-                switch (getClass)
-                {
-                    case 1:
-                        Knight myKnight = new Knight(
-                        id: heroRepository.NextId(),
-                        name: getName,
-                        heroType: "Guerreiro");
-
-                        heroRepository.Update(idHero, myKnight);
-                        Console.WriteLine();
-                        break;
-
-                    case 2:
-                        Wizard myWizard = new Wizard(
-                        id: heroRepository.NextId(),
-                        name: getName,
-                        heroType: "Mago");
-
-                        heroRepository.Update(idHero, myWizard);
-                        Console.WriteLine();
-                        break;
-
-                    case 3:
-                        Rogue myRouge = new Rogue(
-                        id: heroRepository.NextId(),
-                        name: getName,
-                        heroType: "Ladino");
-
-                        heroRepository.Update(idHero, myRouge);
-                        Console.WriteLine();
-                        break;
-                }             
+                heroRepository.UpdateName(idHero, getName);
+            
             }
 
             static void DeleteHero()
             {
                 int idHero = -1;
+                bool validation = false;
+
                 Console.WriteLine(@"
-                        - Excluindo Heroi -");
+                            - Excluindo Heroi -");
 
                 var list = heroRepository.List();
 
                 if (list.Count == 0)
                 {
-                    Console.WriteLine("!!! Nenhum heroi cadastrado. !!!");
-                    Console.WriteLine();
-                    Console.WriteLine(" Pressione qualquer tecla para continuar...");
-                    Console.WriteLine();
-                    Console.ReadLine();
+                    Console.WriteLine(@"
+                        !!! Nenhum heroi cadastrado. !!!");
+                    WaitForKey();
                     return;
                 }
 
-                HeroList();
+                ListHero();
+                do
+                {
+                    Console.WriteLine(@"
+                        Insira o ID do herói a deletar: ");
 
-                Console.WriteLine(@"
-                Digite o ID do Heroi a ser excluido: ");
-                idHero = int.Parse(Console.ReadLine());
+                    if (Int32.TryParse(Console.ReadLine(), out idHero))
+                    {
+                        validation = true;
+                    }
+                } while (validation == false);
 
                 heroRepository.Delete(idHero);
                 Console.WriteLine();
@@ -343,9 +318,12 @@ namespace RPG_CS.src.Entities
 
             static void WaitForKey()
             {
-                Console.WriteLine(" Pressione qualquer tecla para continuar...\n");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine(@"
+                       - V -  Pressione qualquer tecla para continuar...");
                 Console.WriteLine();
                 Console.ReadKey(true);
+                Console.ResetColor();
             }
 
             static void ExitGame()

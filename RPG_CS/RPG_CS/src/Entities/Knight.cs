@@ -18,6 +18,13 @@ namespace RPG_CS.src.Entities
         }
         public Knight() { }
 
+        private Item CurrentItem;
+
+        public void PickUpItem(Item item)
+        {
+            CurrentItem = item;
+        }
+
         public override string Attack()
         {
             return this.name + " atacou usando sua espada!";
