@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/JrxCvLHiKHbvTbmeTuEYOjEB3V+IDpfrvCAhkGofCCSEvEh8gYGya56G/qv+SFf8gKfzphSvB2axEW2dgvIQA==",
+  "success": true,
+  "projectFilePath": "H:\\Faculdade e Estudos\\Programação\\CSharp Console Game\\CSharp Console Game\\CSharp Console Game.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DF\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

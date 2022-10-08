@@ -1,0 +1,16 @@
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.exe
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.deps.json
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.runtimeconfig.json
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.runtimeconfig.dev.json
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.dll
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\CSharp Console Game.pdb
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.csprojAssemblyReference.cache
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.AssemblyInfoInputs.cache
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.AssemblyInfo.cs
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.csproj.CoreCompileInputs.cache
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.dll
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.pdb
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.genruntimeconfig.cache
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\bin\Debug\netcoreapp3.1\Interop.WMPLib.dll
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\Interop.WMPLib.dll
+H:\Faculdade e Estudos\Programação\CSharp Console Game\CSharp Console Game\obj\Debug\netcoreapp3.1\CSharp Console Game.csproj.ResolveComReference.cache
